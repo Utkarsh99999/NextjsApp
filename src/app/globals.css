@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+html body {
+  max-width: 150vw;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme {
+  transition: 1s all ease;
+}
+
+.dark {
+  background-color: rgb(17, 14, 49) !important;
+  color: rgb(200, 255, 252) !important;
+}
+.light {
+  background-color: rgb(200, 255, 252) !important;
+  color: rgb(17, 14, 49) !important;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

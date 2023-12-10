@@ -1,0 +1,53 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+}
+.image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.timage{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.timage:hover{
+  color: greenyellow;
+}
+.move{
+    animation: move 1.5s infinite ease alternate;
+  }
+  @keyframes move{
+    from{
+      transform:translateY(-5px);
+    }
+    to{
+      transform: translateY(5px);
+    }
+  }
+.text{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+.TD{
+    font-weight: lighter;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.t{
+    font-size: 20px;
+    font-weight: bold;
+}

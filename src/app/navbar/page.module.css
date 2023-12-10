@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  width: 100vw;
+  display: flex;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.logo{
+  width: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  padding: auto;
+  font-family: monospace;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 5px;
+  width: 50%;
+  font-size: smaller;
+  align-items: center;
+}
+.a:hover{
+  scale:1.08;
+  background-color: rgb(53, 149, 239);
+}
+.a {
+  text-decoration: none;
+  color: inherit;
+  padding: 1% 1%;
+}
+.logout {
+  padding: 0.2rem 0.6rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgb(0, 179, 255);
+  font-size: larger;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}

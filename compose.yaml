@@ -1,0 +1,39 @@
+version: '3.8' # You can adjust the version based on your Docker Compose version
+
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - "3000:3000"  # Map host port 3000 to container port 3000
+    # Uncomment the lines below if your app depends on a database service (e.g., PostgreSQL)
+    # depends_on:
+    #   db:
+    #     condition: service_healthy
+
+  # Uncomment the section below if you want to include a PostgreSQL database service
+  # db:
+  #   image: postgres
+  #   restart: always
+  #   user: postgres
+  #   secrets:
+  #     - db-password
+  #   volumes:
+  #     - db-data:/var/lib/postgresql/data
+  #   environment:
+  #     - POSTGRES_DB=example
+  #     - POSTGRES_PASSWORD_FILE=/run/secrets/db-password
+  #   expose:
+  #     - 5432
+  #   healthcheck:
+  #     test: [ "CMD", "pg_isready" ]
+  #     interval: 10s
+  #     timeout: 5s
+  #     retries: 5
+
+# Uncomment the lines below if using a database service
+# volumes:
+#   db-data:
+# secrets:
+#   db-password:
+#     file: db/password.txt

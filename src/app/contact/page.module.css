@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 100px;
+  justify-content: center;
+  gap: 50px;
+}
+.move{
+  animation: move 3s infinite ease alternate;
+}
+@keyframes move{
+  from{
+    transform:translateX(-15px);
+  }
+  to{
+    transform: translateX(20px) scale(1.05);
+  }
+}
+.title {
+  font-size: large;
+  margin: 10px 0px;
+  background: linear-gradient(rgb(21, 129, 62), white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact {
+  display: flex;
+  width: 100%;
+  padding: 10px 10px;
+  align-items: center;
+  flex-direction: row;
+  gap: 150px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+}
+.input {
+  height: 50px;
+  width: 370px;
+  background-color: rgb(164, 175, 176);
+  margin: 5px 5px;
+  padding: 5px 5px;
+  font-size: larger;
+  border: 2px solid rgb(255, 255, 255);
+}
+.input:hover{
+  border-color: rgb(0, 0, 0);
+}
+.area{
+    width:370px;
+    margin: 5px 5px;
+    background-color: darkgray;
+    border: 2px solid rgb(255, 255, 255);
+    height: 120px;
+}
+.area:hover{
+  border-color: rgb(0, 0, 0);
+}
+.submit{
+ height: 50px;
+ width: 300px;
+ border-radius: 5px;
+ margin-top: 5px;
+ font-size: x-large;
+ background-color: rgb(1, 100, 9);
+}
+

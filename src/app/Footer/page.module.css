@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  width: 100vw;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.para{
+  text-decoration: none;
+  text-align: left;
+  width: 50%;
+  cursor: pointer;
+  color: inherit;
+}
+.image {
+  display: flex;
+  width: 50%;
+  gap: 5px;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
